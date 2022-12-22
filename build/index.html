@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/slider.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./img/icons/favicon.ico" />
+    <title>Портфолио</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="overlay" class="overlay"></div>
+    <div id="contact-card" class="contact-card"></div>
+    <header class="header">
+      <section class="first-line">
+        <aside class="left">
+          <div class="logo">
+            <p><a href="/">Резюме</a></p>
+            <p><a href="/">Портфолио</a></p>
+          </div>
+          <div class="search">
+            <img class="img-header" src="/img/header/search.svg" alt="" />
+            <div class="input-field">
+              <input id="input-search" type="text" class="input-search" />
+              <label class="label-search" for="input-search"
+                >Поиск по сайту . . .</label
+              >
+            </div>
+          </div>
+        </aside>
+
+        <aside class="right">
+          <div class="select-city">
+            <div id="select_city" class="select_city">
+              <img class="img-header" src="/img/header/city.svg" alt="" />
+              <span class="city">Москва</span>
+            </div>
+            <div id="city-card" class="city-card">
+              <div class="card-city-body">
+                <div class="ccb-input">
+                  <div class="input-field">
+                    <input id="input-search-city" type="text" />
+                    <label for="input-search-city"
+                      >Регион, город, населенный пункт</label
+                    >
+                  </div>
+                  <img id="ccb-input-img" src="/img/header/close.svg" alt="" />
+                </div>
+                <div id="ccb-tags" class="ccb-tags"></div>
+                <hr class="hr" />
+                <div id="loader-container" class="loader-container">
+                  <span class="loader"></span>
+                </div>
+                <div id="ccb-select-city" class="ccb-select-city"></div>
+              </div>
+              <div id="card-city-btn" class="card-city-btn">
+                <button disabled="disabled">Сохранить</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="likes">
+            <img class="img-header" src="/img/header/profile.svg" alt="" />
+            <span class="like-text"><a href="/">Войти</a></span>
+          </div>
+          <div class="likes">
+            <img class="img-header" src="/img/header/like.svg" alt="" />
+            <span class="like-text"><a href="/">1</a></span>
+          </div>
+          <div id="account" class="account">
+            <span class="account-text"
+              ><a href="#">Обратная связь</a><br /><span
+                class="account__text cont"
+                ><a href="#">КОНТАКТЫ</a></span
+              ></span
+            ><img class="img-header" src="/img/header/avatar.jpeg" alt="" />
+          </div>
+        </aside>
+      </section>
+      <section class="second-line">
+        <nav class="menu">
+          <menu>
+            <a href="/" class="item active">Интернет-магазин</a>
+            <a href="/" class="item">Карточки товаров</a>
+            <a href="/" class="item">Слайдер</a>
+            <a href="/" class="item">Калькулятор</a>
+            <a href="/" class="item">Лендинг</a>
+            <a href="/" class="item">Онлайн касса</a>
+            <a href="/" class="item">Отзывы</a>
+            <a href="/" class="item">Квиз</a>
+            <a href="/" class="item-shadow next-item">Контакты</a>
+          </menu>
+        </nav>
+        <div class="img-arrow next-item">
+          <img class="img-header" src="/img/header/arrow-right.svg" alt="" />
+        </div>
+      </section>
+    </header>
+
+    <!-- about -->
+    <section id="wrapper" class="wrapper">
+      <aside class="wrapper__about">
+        <article class="wrapper__about-article">
+          <div class="wrapper__about_header">
+            <span class="about__title elem_title"
+              >Владислав Фатихов
+              <img class="img-header" src="./img/about/code.svg" alt="" />
+              Frontend-разработчик</span
+            >
+          </div>
+          <div class="wrapper__about_body">
+            <div class="about_body-how">
+              <ul>
+                <li
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-end;
+                    margin-left: -32px;
+                  "
+                >
+                  <img
+                    class="img_tags-open"
+                    src="./img/about/openTag.svg"
+                    alt=""
+                  />
+                  <span class="bold">Верстаю адаптивные сайты</span>&nbspпо
+                  дизайн-макету (Pixel Perfect по необходимости)
+                </li>
+                <li>
+                  <span class="bold">Работаю с API</span>
+                  (виджеты, динамический вывод данных с сервера)
+                </li>
+                <li>
+                  <span class="bold">Использую GitHub</span> в своих и командных
+                  проектах
+                </li>
+                <li>
+                  Разбираюсь в чужом коде, чтобы доработать или исправить
+                  фрагмент проекта
+                </li>
+                <li>
+                  Навыки:
+                  <span class="bold"
+                    >JavaScript, Vue, Vuex, HTML, CSS, Sass, Gulp, WebPack,
+                    rest, npm</span
+                  >
+                </li>
+                <li>
+                  Настраиваю SEO, подключаю домены с ssl сертификатами, провожу
+                  код-ревью, тесты
+                </li>
+                <li>
+                  Знаю весь функционал
+                  <span class="bold">1C-Bitrix, Tilda, WordPress</span
+                  ><img
+                    class="img_tags-close"
+                    src="./img/about/closeTag.svg"
+                    alt=""
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper__about_stack">
+              <div class="about_body-stack">
+                <div class="stack__coll">
+                  <span>JavaScript</span>
+                  <img src="./img/stack/js.svg" alt="" />
+                  <img src="./img/stack/typescript.svg" alt="" />
+                  <img src="./img/stack/vue.svg" alt="" />
+                  <img src="./img/stack/node.svg" alt="" />
+                </div>
+                <div class="stack__coll">
+                  <span>HTML</span>
+                  <img src="./img/stack/html.svg" alt="" />
+                  <img src="./img/stack/gulp.svg" alt="" />
+                  <img src="./img/stack/webpack.svg" alt="" />
+                  <img src="./img/stack/seo.svg" alt="" />
+                </div>
+                <div class="stack__coll">
+                  <span>CSS</span>
+                  <img src="./img/stack/css.svg" alt="" />
+                  <img src="./img/stack/sass.svg" alt="" />
+                  <img src="./img/stack/materialize.svg" alt="" />
+                  <img src="./img/stack/bootstrap.svg" alt="" />
+                </div>
+                <div class="stack__coll">
+                  <span>Tools</span>
+                  <img src="./img/stack/vscode.svg" alt="" />
+                  <img src="./img/stack/github.svg" alt="" />
+                  <img src="./img/stack/figma.svg" alt="" />
+                  <img src="./img/stack/npm.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about_body-stacks">
+            <div id="container">
+              <div id="loader-slider" class="loader-container">
+                <span class="loader"></span>
+              </div>
+              <div id="inner_container">
+                <div id="imgs_container">
+                  <div id="img_container" class="img_container">
+                    <img src="./img/stack/tilda.svg" alt="" />
+                  </div>
+                  <div id="img_container" class="img_container">
+                    <img src="./img/stack/bitrix.svg" alt="" />
+                  </div>
+                  <div id="img_container" class="img_container">
+                    <img src="./img/stack/wordpress.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="overlay-btns">
+              <img
+                id="left_button"
+                class="overlay_button"
+                src="/img/header/arrow-left.svg"
+                alt=""
+              />
+
+              <img
+                id="right_button"
+                class="overlay_button"
+                src="/img/header/arrow-right.svg"
+                alt=""
+              />
+              <div class="input-field">
+                <p>
+                  <label for="checkbox-autoplay">
+                    <input
+                      type="checkbox"
+                      id="checkbox-autoplay"
+                      name="autoplay"
+                      checked="checked"
+                    />
+                    <span>автовоспроизведение</span>
+                  </label>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper__about_footer">
+            <div>
+              В приоритет ставлю качество работы и установленные сроки<br />Ценю
+              хорошо составленное техническое задание
+            </div>
+            <div class="wrapper__about_footer-btn">
+              <a id="about_contact" class="button" href="#contacts">
+                КОНТАКТЫ
+              </a>
+            </div>
+          </div>
+        </article>
+      </aside>
+    </section>
+
+    <!-- programs -->
+    <section id="wrapper" class="wrapper"></section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <ul class="pagination">
+        <li class="disabled">
+          <a href="#!"><i class="material-icons">chevron_left</i></a>
+        </li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect">
+          <a href="#!"><i class="material-icons">chevron_right</i></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
